@@ -1,0 +1,40 @@
+<link href="src/css/Madeleine.css" rel="stylesheet">
+<script src="src/lib/stats.js"></script>
+<script src="src/lib/detector.js"></script>
+<script src="src/lib/three.min.js"></script>
+<script src="src/Madeleine.js"></script>
+
+<form id="myForm" name="myForm">
+    <input type="file" id="myForm" name="myForm" multiple>
+</form>
+<div id="target"></div>
+
+<script>
+window.onload = function(){
+    Lily.ready({
+        target: 'target',  // target div id
+        file: 'files',  // file input id
+        path: './src'  // path to source directory from current html file
+    });
+}; 
+</script>
+
+<div id="target" class="madeleine"></div>
+
+<script>
+window.onload = function(){
+    var madeleine = new Madeleine({
+      target: 'target', // target div id
+      data: '3D/akirin.stl', // data path
+      path: './src'  // path to source directory from current html file
+    });
+}; 
+</script>
+
+
+<html>
+
+<b>b</b>
+</html>
+
+akirin.stl
